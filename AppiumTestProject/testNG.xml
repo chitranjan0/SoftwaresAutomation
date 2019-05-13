@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="0">
+	<listeners>
+		<listener class-name="com.ebay.Listener.listener" />
+	</listeners>
+	<test name="Test" enabled="true">
+		<parameter name="platform" value="android" />
+		<classes>
+			<class name="com.ebay.test.PurchaseTest">
+				<methods>
+					<include name="purchaseNewProduct" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> 
